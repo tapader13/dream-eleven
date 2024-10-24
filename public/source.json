@@ -1,0 +1,105 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.postimg.cc/CMNHWm0M/images.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 1000000
+  },
+  {
+    "playerId": 2,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://i.postimg.cc/CxDZVx8C/download.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg-spin",
+    "biddingPrice": 950000
+  },
+  {
+    "playerId": 3,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.postimg.cc/ZY7v8gZN/download-1.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": 850000
+  },
+  {
+    "playerId": 4,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://i.postimg.cc/jSj88BJr/download-3.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": 1100000
+  },
+  {
+    "playerId": 5,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.postimg.cc/fWxgkch1/download-4.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm leg-spin",
+    "biddingPrice": 800000
+  },
+  {
+    "playerId": 6,
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "image": "https://i.postimg.cc/zXFM2ntT/images-1.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 900000
+  },
+  {
+    "playerId": 7,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "https://i.postimg.cc/bvVfCQvm/download-5.jpg",
+    "role": "All-rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": 700000
+  },
+  {
+    "playerId": 8,
+    "name": "Shikhar Dhawan",
+    "country": "India",
+    "image": "https://i.postimg.cc/sgpFrkgG/download-8.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "N/A",
+    "biddingPrice": 650000
+  },
+  {
+    "playerId": 9,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "image": "https://i.postimg.cc/1z9dZ4db/download-7.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": 1150000
+  },
+  
+  {
+    "playerId": 10,
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.postimg.cc/mZvBWNyq/download-6.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "N/A",
+    "biddingPrice": 800000
+  }
+  
+  
+]

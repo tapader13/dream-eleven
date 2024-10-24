@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ amount }) => {
   return (
     <div className='w-11/12 mx-auto'>
       <div className='flex justify-between py-5 items-center'>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <li>
               <button className='flex items-center gap-2 py-4 px-5 rounded-xl border border-solid border-primary/10'>
                 <span className='text-primary text-[16px] font-semibold leading-5'>
-                  0 Coin
+                  {amount} Coin
                 </span>
                 <img src='/dollar 1.png' alt='' />
               </button>
