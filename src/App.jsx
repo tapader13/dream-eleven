@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import MainPart from './components/MainPart';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import NewsLetter from './components/NewsLetter';
 
 function App() {
   const [amount, setAmount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
       <Navbar amount={amount} />
       <Hero handleAmount={handleAmount} />
       <MainPart amount={amount} handleAmountDec={handleAmountDec} />
+      <NewsLetter />
       <Footer />
     </div>
   );

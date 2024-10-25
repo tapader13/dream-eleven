@@ -42,7 +42,7 @@ const MainPart = ({ amount, handleAmountDec }) => {
     );
   };
   return (
-    <div className='w-11/12 mx-auto my-14'>
+    <div className='w-11/12 mx-auto mt-14'>
       <div className='flex justify-between items-center'>
         <div>
           <h1 className='text-primary text-[28px] leading-9 font-bold'>

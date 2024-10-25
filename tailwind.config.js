@@ -10,6 +10,8 @@ export default {
         'hero-background': "url('/bg-shadow.png')",
         'inp-background':
           'linear-gradient(to right top, #fff5da, #e9c77e, #f5b375, #ffa47d, #ff8b85, #f374a1, #cc6cc2)',
+        'newslatter-background':
+          'linear-gradient(to left bottom, #fff5da, #e9c77e, #f5b375, #ffa47d, #ff8b85, #f374a1, #cc6cc2)',
       },
       boxShadow: {
         'custom-shadow': 'inset 4px 4px 20px 20px rgba(19, 19, 19, 0.3)',

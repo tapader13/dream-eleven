@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <div className='bg-[#06091A]'>
+    <div className='bg-[#06091A] pt-48'>
       <div>
         <div className='flex justify-center'>
           <img
-            className='w-[150px] h-[150px] border-dashed border-[#ced0d8] border-2'
+            className='w-[150px] mt-5 h-[150px] border-dashed border-[#ced0d8] border-2'
             src='/logo-footer.png'
             alt=''
           />
