@@ -2,19 +2,19 @@
 
 ## Brief Description
 
-BPL-DREAM 11A React-based web application where cricket freaks can create and manage their DreamCricket Teams. Users have the ability to select a player, manage their coins, remove any selected player and compose an actual effort- free journey while following provided Figma design guidelines.
+BPL-DREAM 11 A React-based web application where cricket freaks can create and manage their DreamCricket Teams. Users have the ability to select a player, manage their coins, remove any selected player and compose an actual effort- free journey while following provided Figma design guidelines.
 
 ## Technologies Used
 
 - React. js: A library for building interactive web interfaces with js.
 
-Tailwind CSS: TailwindCSS is a utility-first css framework for rapid development of custom designs.
+- Tailwind CSS: TailwindCSS is a utility-first css framework for rapid development of custom designs.
 
-React-Toastify: To display user-friendly notifications.
+- React-Toastify: To display user-friendly notifications.
 
-Vite: It is a next-generation frontend tooling that help developer to take less time for set up project.
+- Vite: It is a next-generation frontend tooling that help developer to take less time for set up project.
 
-JSON: For maintaining the players data.
+- JSON: For maintaining the players data.
 
 ## Key Features
 
