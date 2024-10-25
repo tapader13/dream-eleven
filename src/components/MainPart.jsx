@@ -3,7 +3,7 @@ import { GoPersonFill } from 'react-icons/go';
 import { FaFlag } from 'react-icons/fa6';
 import { toast } from 'react-toastify';
 import { RiDeleteBin2Line } from 'react-icons/ri';
-const MainPart = ({ amount, handleAmount }) => {
+const MainPart = ({ amount, handleAmountDec }) => {
   const [active, setActive] = useState('Available');
   const [data, setData] = useState([]);
   const [selectPlayer, setSelectPlayer] = useState([]);
@@ -30,10 +30,16 @@ const MainPart = ({ amount, handleAmount }) => {
     );
     if (!findValue) {
       setSelectPlayer([...selectPlayer, value]);
+      handleAmountDec(value.biddingPrice);
       toast.success(`${value.name} Selected`);
     } else {
       toast.error('player already selected');
     }
+  };
+  const handleRemove = (value) => {
+    setSelectPlayer(
+      selectPlayer.filter((value1) => value1.playerId !== value.playerId)
+    );
   };
   return (
     <div className='w-11/12 mx-auto my-14'>
@@ -143,31 +149,39 @@ const MainPart = ({ amount, handleAmount }) => {
         <div className='mt-9'>
           {selectPlayer?.length > 0 ? (
             <>
-              <div className='p-6 rounded-2xl border border-solid border-primary/10 flex justify-between items-center'>
-                <div className='flex gap-5 items-center'>
+              {selectPlayer?.map((item, i) => (
+                <div
+                  key={i}
+                  className='p-6 mb-2 rounded-2xl border border-solid border-primary/10 flex justify-between items-center'
+                >
+                  <div className='flex gap-5 items-center'>
+                    <div>
+                      <img
+                        className='w-[150px] h-[100px] rounded-2xl'
+                        src={item.image}
+                        alt=''
+                      />
+                    </div>
+                    <div>
+                      <h1 className='text-primary mb-2 text-[20px] font-bold leading-6'>
+                        {item.name}
+                      </h1>
+                      <p className='text-primary/70 mb-2  text-[16px] font-normal leading-5'>
+                        {item.role}
+                      </p>
+                      <p className='text-primary/70 text-[16px] font-normal leading-5'>
+                        ${item.biddingPrice}
+                      </p>
+                    </div>
+                  </div>
                   <div>
-                    <img
-                      className='w-full h-[100px] rounded-2xl'
-                      src={selectPlayer[0].image}
-                      alt=''
+                    <RiDeleteBin2Line
+                      onClick={() => handleRemove(item)}
+                      className='text-[#F14749] cursor-pointer text-[20px] font-normal leading-5'
                     />
                   </div>
-                  <div>
-                    <h1 className='text-primary mb-2 text-[20px] font-bold leading-6'>
-                      {selectPlayer[0].name}
-                    </h1>
-                    <p className='text-primary/70 mb-2  text-[16px] font-normal leading-5'>
-                      {selectPlayer[0].role}
-                    </p>
-                    <p className='text-primary/70 text-[16px] font-normal leading-5'>
-                      ${selectPlayer[0].biddingPrice}
-                    </p>
-                  </div>
                 </div>
-                <div>
-                  <RiDeleteBin2Line className='text-[#F14749] cursor-pointer text-[20px] font-normal leading-5' />
-                </div>
-              </div>
+              ))}
               <div className='p-2 mt-5 w-fit border bg-white/5 border-[#E7FE29] rounded-2xl'>
                 <button
                   onClick={() => handleActive('Available')}
